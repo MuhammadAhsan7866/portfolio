@@ -33,7 +33,7 @@ const BrainTreeAbout = () => {
             width={{ xl: "50%", base: "100%" }}
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0., ease: "easeOut" }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
           />
 
           {/* Animated Text Content */}
@@ -62,7 +62,7 @@ const BrainTreeAbout = () => {
               Key areas of expertise
             </Text>
             <List spacing={3} color="white" display={"flex"} gap={"15px"} alignItems={"center"} mt={"15px"}>
-              {['AI', 'BlockChain', 'Game Development'].map((item) => (
+              {["AI", "BlockChain", "Game Development"].map((item) => (
                 <ListItem key={item} fontSize={"18px"} fontWeight={"700"}>
                   <ListIcon as={MdFiberManualRecord} color="#FF1415" />
                   {item}
